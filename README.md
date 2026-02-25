@@ -1,6 +1,6 @@
 # Digital Technology
 
-This repository contains lab assignments and an additional FPGA project developed for the **Digital Technology** course at AGH UST.
+This repository contains lab assignments and an additional FPGA project developed in a 4-person team for the **Digital Technology** course at AGH UST.
 
 ## Repository Content
 
