@@ -1,0 +1,98 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Web Edition
+# Date created = 14:59:28  May 11, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		projekt_fpga_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY FLEX10K
+set_global_assignment -name DEVICE "EPF10K70RC240-4"
+set_global_assignment -name TOP_LEVEL_ENTITY menu_selector
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:59:28  MAY 11, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH menu_selector_tb.vhd -section_id eda_simulation
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_91 -to clk
+set_location_assignment PIN_29 -to right_button
+set_location_assignment PIN_28 -to left_button
+set_global_assignment -name MISC_FILE "C:/Users/marta/Desktop/cyfrowka/projekt_fpga.dpf"
+set_location_assignment PIN_6 -to display_left[6]
+set_location_assignment PIN_7 -to display_left[5]
+set_location_assignment PIN_8 -to display_left[4]
+set_location_assignment PIN_9 -to display_left[3]
+set_location_assignment PIN_11 -to display_left[2]
+set_location_assignment PIN_12 -to display_left[1]
+set_location_assignment PIN_13 -to display_left[0]
+set_location_assignment PIN_17 -to display_right[6]
+set_location_assignment PIN_18 -to display_right[5]
+set_location_assignment PIN_19 -to display_right[4]
+set_location_assignment PIN_20 -to display_right[3]
+set_location_assignment PIN_21 -to display_right[2]
+set_location_assignment PIN_23 -to display_right[1]
+set_location_assignment PIN_24 -to display_right[0]
+set_global_assignment -name VHDL_FILE ../debouncer.vhd
+set_global_assignment -name VHDL_FILE ../menu_selector.vhd
+set_global_assignment -name VHDL_FILE ../seven_seg_decoder.vhd
+set_global_assignment -name VHDL_FILE menu_selector.vhd
+set_global_assignment -name VHDL_FILE debouncer.vhd
+set_global_assignment -name VHDL_FILE seven_seg_decoder.vhd
+set_global_assignment -name FMAX_REQUIREMENT "25.175 MHz"
+set_global_assignment -name IGNORE_CLOCK_SETTINGS OFF
+set_global_assignment -name TSU_REQUIREMENT "39.72 ns"
+set_global_assignment -name TCO_REQUIREMENT "28 ns"
+set_global_assignment -name TPD_REQUIREMENT "10 ns"
+set_global_assignment -name TH_REQUIREMENT "2 ns"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name FMAX_REQUIREMENT "25.175 MHz" -section_id clk
+set_instance_assignment -name CLOCK_SETTINGS clk -to clk
+set_global_assignment -name MISC_FILE "C:/Users/karol/Downloads/projekt_fpga/projekt_fpga.dpf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE projekt_fpga.vwf
+set_global_assignment -name VHDL_FILE menu_selector_tb.vhd
+set_global_assignment -name EDA_MAP_ILLEGAL_CHARACTERS ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME menu_selector_tb.vhd -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME menu_selector_tb.vhd -section_id menu_selector_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME menu_selector_tb.vhd -section_id menu_selector_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_FILE menu_selector_tb.vhd -section_id menu_selector_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME projekt_fpga.vwf -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME menu_selector -section_id projekt_fpga.vwf
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME menu_selector -section_id projekt_fpga.vwf
+set_global_assignment -name EDA_TEST_BENCH_FILE projekt_fpga.vwf -section_id projekt_fpga.vwf
+set_global_assignment -name MISC_FILE "C:/Users/karol/OneDrive/Pulpit/4sem/digital-technology/FPGA/projekt_fpga.dpf"
